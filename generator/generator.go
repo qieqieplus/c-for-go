@@ -6,7 +6,7 @@ import (
 	"math/rand"
 	"sort"
 
-	tl "github.com/xlab/c-for-go/translator"
+	tl "github.com/qieqieplus/c-for-go/translator"
 )
 
 type Generator struct {
@@ -44,9 +44,9 @@ type Config struct {
 }
 
 type GenOptions struct {
-	SafeStrings bool `yaml:"SafeStrings"`
+	SafeStrings     bool `yaml:"SafeStrings"`
 	StructAccessors bool `yaml:"StructAccessors"`
-	KeepAlive   bool `yaml:"KeepAlive"`
+	KeepAlive       bool `yaml:"KeepAlive"`
 }
 
 func New(pkg string, cfg *Config, tr *tl.Translator) (*Generator, error) {

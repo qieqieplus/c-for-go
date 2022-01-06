@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	tl "github.com/xlab/c-for-go/translator"
+	tl "github.com/qieqieplus/c-for-go/translator"
 )
 
 type HelperSide string
